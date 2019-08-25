@@ -12,11 +12,8 @@ class LoginPage extends Page {
     get loginButton()     { return $('#Login'); }
  
     /**
-     * define or overwrite page methods
+     * override page methods
      */
-    open (path) {
-        super.open(path)       
-    }
 
     waitForPageToLoad (title) {
  		super.waitForPageToLoad (title)

@@ -12,15 +12,19 @@ class DevelopersPage extends Page {
     get logoutButton()   { return $('#user-info-logout'); }
 
 	 /**
-     * define or overwrite page methods
+     * override page methods
      */
+
+    open (path) {
+        super.open(path)       
+    }
 
 	waitForPageToLoad (title) {
 		super.waitForPageToLoad (title)
 	}
 
     /**
-     * your page specific methods
+     * page specific methods
      */
 
      search (searchString) {

@@ -23,8 +23,8 @@ describe('Salesforce page test', function () {
 
 	// login to site entering user name, password and submit the request
     LoginPage.login('sitetracker-test@sitetracker.com', 'paloalto94306'); 
-	DevelopersPage.waitForPageToLoad ('Salesforce Developers')
-	;
+	DevelopersPage.waitForPageToLoad ('Salesforce Developers');
+
 	// confirm that the user appears in the login button text
 	expect (DevelopersPage.loginButton.getText()).toContain('Artie Alvidrez');
  	expect(browser.getTitle()).toContain('Salesforce Developers');
@@ -40,7 +40,8 @@ describe('Salesforce page test', function () {
 	expect(SearchResultsPage.writingTestsLink.isExisting().toBeTrue);
  });
  it ('4.  On the Writing Tests Page, Click Link Testing Apex', function () {
-	// click the "Writing Tests" link returned in the search results and check that the page loads correctly 
+	// click the "Writing Tests" link returned in the search results 
+	// and check that the page loads correctly 
 	SearchResultsPage.clickWritingTestsLink ();
 	SearchResultsPage.waitForPageToLoad ('Writing Tests');
 	expect(browser.getTitle()).toContain('Writing Tests');

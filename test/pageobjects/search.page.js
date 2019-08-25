@@ -11,7 +11,7 @@ class SearchResultsPage extends Page {
     get testingApexLink()   { return $('a=Testing Apex'); }
 
     /**
-     * define or overwrite page methods
+     * override page methods
      */
     waitForPageToLoad (title) {
  		super.waitForPageToLoad (title)

@@ -55,7 +55,7 @@ exports.config = {
         // grid with only 5 Chrome instances available you can make sure that not more than
         // 5 instances get started at a time.
         maxInstances: 5,
-        browserName: 'chrome',
+      browserName: 'chrome',
         'goog:chromeOptions': {
           // to run chrome headless the following flags are required
           // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
@@ -69,7 +69,7 @@ exports.config = {
       //   // 5 instances get started at a time.
       //   maxInstances: 5,
       //   browserName: 'firefox',
-      //   "moz:firefoxOptions": {
+     //    "moz:firefoxOptions": {
       //     // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
       //     //args: ['-headless']
       //   }
@@ -89,11 +89,11 @@ exports.config = {
       //   // 5 instances get started at a time.
       //   maxInstances: 5,
       //   browserName: 'internet explorer',
-      //   acceptUntrustedCertificates: true,
-      //   ignoreProtectedModeSettings: true,    //only applicable to IE browser
-      //   ignoreZoomSetting: true,              //only applicable to IE browser
-      //   ensureCleanSession: true,
-      // },
+     //    acceptUntrustedCertificates: true,
+     //    ignoreProtectedModeSettings: true,    //only applicable to IE browser
+     //    ignoreZoomSetting: true,              //only applicable to IE browser
+     //    ensureCleanSession: true,
+     //  },
   ],
     //
     // ===================
@@ -115,7 +115,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://formy-project.herokuapp.com/',
+    baseUrl: 'developer.salesforce.com',
     waitforTimeout: 10000,            // Default timeout for all waitFor* commands.
     connectionRetryTimeout: 90000,    // Default timeout in milliseconds for request  // if Selenium Grid doesn't send response
     connectionRetryCount: 3,          // Default request retries count
@@ -142,7 +142,7 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    // reporters: ['dot'],
+     reporters: ['spec'],
     //
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {

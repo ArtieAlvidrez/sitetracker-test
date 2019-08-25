@@ -14,12 +14,21 @@ The operations are as follows:
 
 Installation:
 --------------
-This project is developed and tested on **Node v10.16.2**.  After downloading all files, navigate to the package.json folder and run `npm install` to grab all dependencies.
+This project is developed and tested on **Node v10.16.2**.  After downloading all files, navigate to the package.json folder and run this command to grab all dependencies:
 
-To take full advantage of the command line and use grunt tasks you will need to make sure that you have added `node_modules/.bin` to your `$PATH`.  Otherwise you will need to install the following globally:
+'npm install' 
 
-  `npm install -g  grunt-cli`
+To take full advantage of the command line and use grunt tasks you will need to make sure that you have added `node_modules/.bin` to your '$PATH'.  Otherwise you will need to install the following globally:
+
+'npm install -g  grunt-cli'
 
 To execute the entire test suite in local development, you must use grunt to launch the tests:
 
-`grunt webdriver:test`.  
+'grunt webdriver:test'
+
+IMPORTANT NOTE:
+----------------
+On step 1 in the above case study, the login to the developer.salesforce.com site has consistently required a verification code to be entered after logging in with username and password.  I have not found a way to disable the verification code requirement.  Currently, the username of "sitetracker-test@sitetracker.com" (password "paloalto94306") in the developers site is defined with my email (artie.alvidrez@gmail.com).  Consequently, the verification code is always sent to artie.alvidrez@gmail.com.  In order to have the verification code sent to another email address, change the setting of this user (sitetracker-test@sitetracker.com) to an email address you can access in order to get the code.
+ 
+
+
