@@ -22,7 +22,11 @@ To take full advantage of the command line and use grunt tasks you will need to 
 
 'npm install -g  grunt-cli'
 
-To execute the entire test suite in local development, you must use grunt to launch the tests:
+To execute the entire test suite in local development, you can use two methods to execute:
+
+'npm run test'
+
+or
 
 'grunt webdriver:test'
 
