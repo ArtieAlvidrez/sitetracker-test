@@ -4,7 +4,7 @@
   "description": "WebDriverIO-v5 test of developer.salesforce.com site using Jasmine",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/.bin/wdio ./test/config/sitetracker-test.conf.js"
+    "test": "wdio ./test/config/sitetracker-test.conf.js"
   },
   "keywords": [
     "selenium",
